@@ -11,7 +11,7 @@ for each line in file:
     until first comma, take number and store into intA
     from first to second comma, take number and store into intB
     2nd to comma to end of line, take word and store into stringA
-    
+    make temp string variables for ints (sintA, sintB)
     clear the stringstream
 
     take intA, add it to intB
@@ -20,7 +20,5 @@ for each line in file:
     repeats for every line
     
     
-
-
     
 ```
