@@ -17,8 +17,5 @@ for each line in file:
     take intA, add it to intB
     print stringA as many times as the sum of intA and intB
 
-    repeats for every line
-    
-    
-    
+    repeats for every line    
 ```
