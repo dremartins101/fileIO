@@ -28,17 +28,26 @@ int main(){
 			getline(ss, sIntA, ',');
 			getline(ss, sIntB, ',');
 			getline(ss, stringA, ',');
+			
+			//test
+			std::cout << "sIntA: " << sIntA << "\n sIntB: " << sIntB << "\n stringA: " << stringA << std::endl;
 
 			converter << sIntA;
 			converter >> intA;
 
 			converter << sIntB;
 			converter >> intB;
+			
+			// test			
+			std::cout << "int A: " << intA << " \n int B: " << intB << std::endl;
+			//
 
 			intCount = intA + intB;
-			for (int i = 0; i <= intCount; i++){
+			std:: cout << intCount << std::endl;
+			/*for (int i = 0; i <= intCount; i++){
 				std::cout << stringA << " " << std::endl;
 			} // end for
+			*/
 		} // end while
 	} // end if
 		else{
