@@ -6,6 +6,7 @@
 int main(){
 	std::stringstream ss;
 	std::stringstream converter;
+	std::stringstream converter2;
 	std::string currentLine;
 	std::string sIntA;
 	std::string sIntB;
@@ -22,6 +23,10 @@ int main(){
 			// ss clearer
 			ss.clear();
 			ss.str("");
+			converter.clear();
+			converter.str("");
+			converter2.clear();
+			converter2.str("");
 
 			ss.str(currentLine);
 
@@ -30,24 +35,22 @@ int main(){
 			getline(ss, stringA, ',');
 			
 			//test
-			std::cout << "sIntA: " << sIntA << "\n sIntB: " << sIntB << "\n stringA: " << stringA << std::endl;
-
+			//std::cout << "sIntA: " << sIntA << "\n sIntB: " << sIntB << "\n stringA: " << stringA << std::endl;
+			
 			converter << sIntA;
 			converter >> intA;
 
-			converter << sIntB;
-			converter >> intB;
+			converter2 << sIntB;
+			converter2 >> intB;
 			
+			int intCount = intA + intB;
 			// test			
-			std::cout << "int A: " << intA << " \n int B: " << intB << std::endl;
+			//std::cout << "int A: " << intA << "\n int B: " << intB << std::endl;
 			//
-
-			intCount = intA + intB;
-			std:: cout << intCount << std::endl;
-			/*for (int i = 0; i <= intCount; i++){
-				std::cout << stringA << " " << std::endl;
+			for(int i = 0; i < intCount; i++){
+				std::cout << stringA;
 			} // end for
-			*/
+			std::cout << "\n";
 		} // end while
 	} // end if
 		else{
@@ -55,4 +58,4 @@ int main(){
 		}
 		inFile.close();
 } // end main
-			
+
